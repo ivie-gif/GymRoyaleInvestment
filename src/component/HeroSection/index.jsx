@@ -156,7 +156,7 @@ const HeroSection = (props) => {
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
                 sx={{
-                  color: "#000000",
+                  color: "#fff",
                   "&:hover": { color: "#fff", backgroundColor: "#E10000" },
                   px: 2,
                   textAlign: "center",
@@ -281,7 +281,7 @@ const HeroSection = (props) => {
                   justifyContent={alignment}
                   alignItems="center"
                   gap={1}
-                  sx={{ mb: { xs: 10, md: 2 } }}
+                  sx={{ mb: { xs: 10, md: 0 } }}
                 >
                   <Typography variant="h6">Follow Us:</Typography>
                   <IconButton sx={{ color: "#fff" }}>
