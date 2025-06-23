@@ -64,9 +64,8 @@ export default function VerticalTabs() {
       sx={{
         py: { xs: 6, md: 10 },
         px: { xs: 0, md: 10 },
-        backgroundColor: "#fff",
-        // border: "1px solid red",
-        height: "100vh",
+        backgroundColor: "#f8f9fa",
+        height: { xs: "auto", md: "100vh" },
       }}
     >
       <motion.div
@@ -79,31 +78,46 @@ export default function VerticalTabs() {
           component="h2"
           fontWeight="bold"
           sx={{
-            fontSize: { xs: "1.6rem", md: "2rem" },
+            fontSize: { xs: "25px", md: "24px" },
+            textAlign: { xs: "left", md: "center" },
+            lineHeight: { xs: "1.5rem", md: "29px" },
+            fontWeight: 500,
             mt: { xs: 0, md: 5 },
+            px: { xs: 3, md: 0 },
           }}
         >
           Our Benefits
         </Typography>
         <Typography
-          variant="h3"
+          variant="subtitle1"
           component="h3"
           color="primary"
+          gutterBottom
           sx={{
             mx: { xs: 0, md: 50 },
-            textAlign: { xs: "center", md: "center" },
+            textAlign: { xs: "left", md: "center" },
+            fontSize: { xs: "23px", md: "48px" },
+            lineHeight: { xs: "1.5rem", md: "58px" },
+            fontWeight: 700,
+            px: { xs: 3, md: 0 },
+            pt: { xs: 1.5, md: 0 },
           }}
         >
           Benefits We offer.
         </Typography>
         <Typography
-          sx={{
-            fontSize: { xs: "0.95rem", md: "1rem" },
-            textAlign: { xs: "center", md: "center" },
-            mb: { xs: 3, md: 4 },
-            mx: { xs: 0, md: 50 },
-          }}
-        >
+            variant="body2"
+            color="text.secondary"
+            mb={{ xs: 3, md: 4 }}
+            sx={{
+              fontSize: { xs: "1rem", md: "16px" },
+              textAlign: { xs: "left", md: "center" },
+              lineHeight: { xs: "1.5rem", md: "24px" },
+              fontWeight: 400,
+              color: "rgb(120, 120, 120)",
+              mx: { xs: 3, md: 50 },
+            }}
+          >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
           adipisci facilis cupiditate recusandae aperiam temporibus corporis
           itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
@@ -114,10 +128,8 @@ export default function VerticalTabs() {
       <Box
         sx={{
           flexGrow: 1,
-          bgcolor: "background.paper",
           display: { xs: "block", md: "flex" },
-          height: 450,
-          //   border: "1px solid brown",
+          height: { xs: "auto", md: "450px" },
         }}
       >
         <motion.div
@@ -137,10 +149,10 @@ export default function VerticalTabs() {
               borderColor: "divider",
               minWidth: { xs: 0, md: 400 },
               height: 400,
-              backgroundColor: "#F8F8F8",
+              backgroundColor: "rgb(206, 210, 213)",
               mx: { xs: 2.5, md: 0 },
               mb: { xs: 3, md: 0 },
-            //   pt: 3,
+              //   pt: 3,
             }}
           >
             <Tab
@@ -203,15 +215,33 @@ export default function VerticalTabs() {
             right={
               <Box>
                 <Typography
+                  variant="subtitle1"
+                  component="h3"
+                  color="primary"
+                  gutterBottom
                   sx={{
-                    fontSize: { xs: "0.95rem", md: "3rem" },
-                    mb: { xs: 3, md: 4 },
                     textAlign: { xs: "left", md: "left" },
+                    fontSize: { xs: "23px", md: "48px" },
+                    lineHeight: { xs: "1.5rem", md: "58px" },
+                    fontWeight: 700,
+                    pt: { xs: 1.5, md: 0 },
+                    mt: { xs: 0, md: -4 },
                   }}
                 >
                   Right side content for Item One
                 </Typography>
-                <Typography sx={{ textAlign: { xs: "left", md: "left" } }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  mb={{ xs: 0, md: 4 }}
+                  sx={{
+                    fontSize: { xs: "1rem", md: "16px" },
+                    textAlign: { xs: "left", md: "left" },
+                    lineHeight: { xs: "1.5rem", md: "24px" },
+                    fontWeight: 400,
+                    color: "rgb(120, 120, 120)",
+                  }}
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Corporis amet sequi molestiae tenetur eum mollitia,
                   blanditiis, magnam illo magni error dolore unde perspiciatis
@@ -227,21 +257,39 @@ export default function VerticalTabs() {
               <img
                 src={Benefit2}
                 alt="Benefits"
-                style={{ width: "100%", height: "70%", marginTop: "-25px" }}
+                style={{ width: "100%", height: "80%", marginTop: "-25px" }}
               />
             }
             right={
               <Box>
                 <Typography
+                  variant="subtitle1"
+                  component="h3"
+                  color="primary"
+                  gutterBottom
                   sx={{
-                    fontSize: { xs: "0.95rem", md: "3rem" },
-                    mb: { xs: 3, md: 4 },
                     textAlign: { xs: "left", md: "left" },
+                    fontSize: { xs: "23px", md: "48px" },
+                    lineHeight: { xs: "1.5rem", md: "58px" },
+                    fontWeight: 700,
+                    pt: { xs: 1.5, md: 0 },
+                    mt: { xs: 0, md: -4 },
                   }}
                 >
                   Right side content for Item One
                 </Typography>
-                <Typography sx={{ textAlign: { xs: "left", md: "left" } }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  mb={{ xs: 0, md: 4 }}
+                  sx={{
+                    fontSize: { xs: "1rem", md: "16px" },
+                    textAlign: { xs: "left", md: "left" },
+                    lineHeight: { xs: "1.5rem", md: "24px" },
+                    fontWeight: 400,
+                    color: "rgb(120, 120, 120)",
+                  }}
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Corporis amet sequi molestiae tenetur eum mollitia,
                   blanditiis, magnam illo magni error dolore unde perspiciatis
@@ -257,21 +305,39 @@ export default function VerticalTabs() {
               <img
                 src={Benefit3}
                 alt="Benefits"
-                style={{ width: "100%", height: "85%", marginTop: "-25px" }}
+                style={{ width: "100%", height: "90%", marginTop: "-25px" }}
               />
             }
             right={
               <Box>
                 <Typography
+                  variant="subtitle1"
+                  component="h3"
+                  color="primary"
+                  gutterBottom
                   sx={{
-                    fontSize: { xs: "0.95rem", md: "3rem" },
-                    mb: { xs: 3, md: 4 },
                     textAlign: { xs: "left", md: "left" },
+                    fontSize: { xs: "23px", md: "48px" },
+                    lineHeight: { xs: "1.5rem", md: "58px" },
+                    fontWeight: 700,
+                    pt: { xs: 1.5, md: 0 },
+                    mt: { xs: 0, md: -4 },
                   }}
                 >
                   Right side content for Item One
                 </Typography>
-                <Typography sx={{ textAlign: { xs: "left", md: "left" } }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  mb={{ xs: 0, md: 4 }}
+                  sx={{
+                    fontSize: { xs: "1rem", md: "16px" },
+                    textAlign: { xs: "left", md: "left" },
+                    lineHeight: { xs: "1.5rem", md: "24px" },
+                    fontWeight: 400,
+                    color: "rgb(120, 120, 120)",
+                  }}
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Corporis amet sequi molestiae tenetur eum mollitia,
                   blanditiis, magnam illo magni error dolore unde perspiciatis
@@ -287,21 +353,39 @@ export default function VerticalTabs() {
               <img
                 src={Benefit4}
                 alt="Benefits"
-                style={{ width: "100%", height: "70%", marginTop: "-25px" }}
+                style={{ width: "100%", height: "80%", marginTop: "-25px" }}
               />
             }
             right={
               <Box>
                 <Typography
+                  variant="subtitle1"
+                  component="h3"
+                  color="primary"
+                  gutterBottom
                   sx={{
-                    fontSize: { xs: "0.95rem", md: "3rem" },
-                    mb: { xs: 3, md: 4 },
                     textAlign: { xs: "left", md: "left" },
+                    fontSize: { xs: "23px", md: "48px" },
+                    lineHeight: { xs: "1.5rem", md: "58px" },
+                    fontWeight: 700,
+                    pt: { xs: 1.5, md: 0 },
+                    mt: { xs: 0, md: -4 },
                   }}
                 >
                   Right side content for Item One
                 </Typography>
-                <Typography sx={{ textAlign: { xs: "left", md: "left" } }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  mb={{ xs: 0, md: 4 }}
+                  sx={{
+                    fontSize: { xs: "1rem", md: "16px" },
+                    textAlign: { xs: "left", md: "left" },
+                    lineHeight: { xs: "1.5rem", md: "24px" },
+                    fontWeight: 400,
+                    color: "rgb(120, 120, 120)",
+                  }}
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Corporis amet sequi molestiae tenetur eum mollitia,
                   blanditiis, magnam illo magni error dolore unde perspiciatis

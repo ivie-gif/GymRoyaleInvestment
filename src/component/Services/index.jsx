@@ -53,30 +53,44 @@ const Services = () => {
             component="h2"
             fontWeight="bold"
             sx={{
-              fontSize: { xs: "1.6rem", md: "2rem" },
-              // textAlign: { xs: "center", md: "left" },
+              fontSize: { xs: "25px", md: "24px" },
+              textAlign: { xs: "left", md: "center" },
+              lineHeight: { xs: "1.5rem", md: "29px" },
+              fontWeight: 500,
               mt: { xs: 0, md: 5 },
+              px: { xs: 3, md: 0 },
             }}
           >
             Our Services
           </Typography>
           <Typography
-            variant="h3"
+            variant="subtitle1"
             component="h3"
             color="primary"
+            gutterBottom
             sx={{
               mx: { xs: 0, md: 50 },
-              textAlign: { xs: "center", md: "center" },
+              textAlign: { xs: "left", md: "center" },
+              fontSize: { xs: "23px", md: "48px" },
+              lineHeight: { xs: "1.5rem", md: "58px" },
+              fontWeight: 700,
+              px: { xs: 3, md: 0 },
+              pt: { xs: 1.5, md: 0 },
             }}
           >
             Connecting businesses, ideas, and people for greater impact.
           </Typography>
           <Typography
+            variant="body2"
+            color="text.secondary"
+            mb={{ xs: 0, md: 4 }}
             sx={{
-              fontSize: { xs: "0.95rem", md: "1rem" },
-              textAlign: { xs: "center", md: "center" },
-              mb: { xs: 3, md: 4 },
-              mx: { xs: 0, md: 50 },
+              fontSize: { xs: "1rem", md: "16px" },
+              textAlign: { xs: "left", md: "center" },
+              lineHeight: { xs: "1.5rem", md: "24px" },
+              fontWeight: 400,
+              color: "rgb(120, 120, 120)",
+              mx: { xs: 3, md: 50 },
             }}
           >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
@@ -90,9 +104,9 @@ const Services = () => {
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.9 }}
+        transition={{ duration: 1, delay: 0.5 }}
       >
-        <Grid container spacing={2} sx={{ mt: 10, px: { xs: 0, md: 10 } }}>
+        <Grid container spacing={2} sx={{ mt: { xs: 5, md: 10 }, px: { xs: 0, md: 10 } }}>
           {ServicesTypes.map((service) => (
             <Grid item key={service.id} size={{ xs: 12, md: 6, lg: 3 }}>
               <Box
@@ -101,13 +115,15 @@ const Services = () => {
                   flexDirection: "column",
                   alignItems: "center",
                   textAlign: "center",
-                  p: 2,
+                  px: { xs: 2, md: 4 },
+                  py: { xs: 2, md: 4 },
+                  mx: { xs: 3, md: 0 },
                   borderRadius: 2,
                   boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
                   backgroundColor: "rgb(228, 236, 244)",
                 }}
               >
-                <service.icon sx={{ fontSize: 48, mb: 2 , mt: 3}} />
+                <service.icon sx={{ fontSize: 48, mb: 2, mt: 3 }} />
                 <Typography variant="h6" component="h3" fontWeight="bold">
                   {service.title}
                 </Typography>
